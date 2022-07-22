@@ -1,5 +1,5 @@
 <?php
-  include("../../config.php");
+  include("../../Config.php");
 
   if (isset($_POST['surahid'])) {
     $surahid = $_POST['surahid'];

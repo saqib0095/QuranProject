@@ -1,5 +1,5 @@
 <?php 
-	include("includes/includedfiles.php");
+	include("Includes/includedfiles.php");
 	if (isset($_GET['id'])) {
 	  $artistid = $_GET['id'];
 	}

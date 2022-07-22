@@ -1,5 +1,5 @@
 <?php 
-      include("includes/includedfiles.php");
+      include("Includes/includedfiles.php");
 ?>
 
 

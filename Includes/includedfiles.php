@@ -1,11 +1,11 @@
 <?php 
 	if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
-		  include("includes/config.php");
-		  include("includes/classes/User.php");
-		  include("includes/classes/Artist.php");
-		  include("includes/classes/Album.php");
-		  include("includes/classes/Surah.php");
-		  include("includes/classes/Playlist.php");
+		  include("Includes/Config.php");
+		  include("Includes/Classes/User.php");
+		  include("Includes/Classes/Artist.php");
+		  include("Includes/Classes/Album.php");
+		  include("Includes/Classes/Surah.php");
+		  include("Includes/Classes/Playlist.php");
 
 		  if (isset($_GET['userLoggedIn'])) {
 		  	$userLoggedIn = new User($con, $_GET['userLoggedIn']);
@@ -15,8 +15,8 @@
 		  }
 	}
 	else {
-		include("includes/header.php");
-		include("includes/footer.php");
+		include("Includes/header.php");
+		include("Includes/footer.php");
 		$url = $_SERVER['REQUEST_URI'];
 		echo "<script>
 			openPage('$url');

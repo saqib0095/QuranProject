@@ -1,5 +1,5 @@
 <?php
-  include("../../config.php");
+  include("../../Config.php");
 
   if (isset($_POST['albumId'])) {
     $albumId = $_POST['albumId'];

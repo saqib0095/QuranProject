@@ -159,10 +159,10 @@ $(document).ready(function(){
 
     pauseSurah();
 
-    $.post("includes/handlers/ajax/getsurahjson.php", {surahid: trackId}, function(data){
+    $.post("Includes/handlers/ajax/getsurahjson.php", {surahid: trackId}, function(data){
       var track = JSON.parse(data);
       $(".trackName span").text(track.title);
-        $.post("includes/handlers/ajax/getArtistjson.php", {artistId: track.artist}, function(data){
+        $.post("Includes/handlers/ajax/getArtistjson.php", {artistId: track.artist}, function(data){
           var artist = JSON.parse(data);
           $(".artistName span").text(artist.name);
           $(".artistName span").attr("onclick", "openPage('album.php?id="+ artist.id +"')");
@@ -184,7 +184,7 @@ $(document).ready(function(){
   }
   function playSurah(){
     if (audioElement.audio.currentTime == 0 ) {
-       $.post("includes/handlers/ajax/updatePlays.php", {surahid: audioElement.currentlyPlaying.id });
+       $.post("Includes/handlers/ajax/updatePlays.php", {surahid: audioElement.currentlyPlaying.id });
 
     }
 

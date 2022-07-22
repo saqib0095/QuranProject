@@ -1,8 +1,8 @@
 <?php
-  include("includes/config.php");
-  include("includes/classes/Artist.php");
-  include("includes/classes/Album.php");
-  include("includes/classes/Surah.php");
+  include("Includes/Config.php");
+  include("Includes/Classes/Artist.php");
+  include("Includes/Classes/Album.php");
+  include("Includes/Classes/Surah.php");
 
 
   //session_destroy(); // logout manually
@@ -31,6 +31,6 @@
 
     <div id="mainContainer">
       <div id="topContainer">
-        <?php include("includes/navBarContainer.php"); ?>
+        <?php include("Includes/navBarContainer.php"); ?>
         <div id="mainViewContainer">
           <div id="mainContent">

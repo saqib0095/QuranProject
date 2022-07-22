@@ -1,5 +1,5 @@
 <?php
-include("includes/includedFiles.php");
+include("Includes/includedFiles.php");
 ?>
 
 <div class="playlistsContainer">

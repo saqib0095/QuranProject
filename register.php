@@ -1,10 +1,10 @@
 <?php
-  include("includes/config.php");
-  include("includes/classes/Account.php");
-  include("includes/classes/Constants.php");
+  include("Includes/Config.php");
+  include("Includes/Classes/Account.php");
+  include("Includes/Classes/Constants.php");
   $account = new Account($con);
-  include("includes/handlers/registerhandler.php");
-  include("includes/handlers/loginhandler.php");
+  include("Includes/handlers/registerhandler.php");
+  include("Includes/handlers/loginhandler.php");
 
   function getInputValue($name){
     if(isset($_POST[$name])){
